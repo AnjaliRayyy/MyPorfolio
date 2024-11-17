@@ -1,0 +1,42 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    background: url("https://img.freepik.com/free-vector/gradient-dynamic-purple-lines-background_23-2148995757.jpg") no-repeat;
+    background-size: cover;
+}
+.about-img>img{
+    /* position: relative;
+    left : 13%;
+    top:130%; */
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: 0 0 30px #e9a1df, 0 0 40px rgb(199, 21, 119);
+    border-radius: 50%;
+    z-index : 0;
+}
+.about-text h2{
+    font-size : 50px;
+    margin : 10px 0;
+}
+.about-text>h2>span{
+    color: rgb(199, 21, 119);
+}
+.about-text h4{
+   font-size : 29px;
+   font-weight: 600;
+   color:white;
+   line-height: 1.7;
+   margin:10px 0 30px;
+
+}
+.about-text p{
+    color : aliceblue;
+    font-size : 17px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.about-text a{
+    margin-bottom: 2rem;
+}

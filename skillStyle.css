@@ -1,0 +1,33 @@
+.skill-sec{
+    background: url("https://img.freepik.com/free-vector/gradient-dynamic-purple-lines-background_23-2148995757.jpg") no-repeat;
+    background-size: cover;
+}
+#skills h2{
+    text-align: center;
+    font-size : 50px;
+    padding : 10px 0 20px;
+}
+#skills h2 span{
+    color : rgb(199, 21, 119);
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.tech-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill-cont-item h3{
+    text-decoration: underline;
+}
+.prog-bar{
+    height: 5px;
+    width: 40vw;
+    border-radius: 7px;
+    background-color: black;
+}

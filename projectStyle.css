@@ -1,0 +1,45 @@
+.my-projects{
+    background: url("https://img.freepik.com/free-vector/gradient-dynamic-purple-lines-background_23-2148995757.jpg") no-repeat;
+    background-size: cover;
+}
+.my-projects h2{
+    text-align: center;
+    font-size : 50px;
+    padding : 10px 0 20px;
+}
+.my-projects h2 span{
+    color : rgb(199, 21, 119);
+}
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    height: 25rem;
+    width: 18rem;
+    box-shadow: 0 0 20px 5px rgb(199, 21, 119) ;
+    background-color: rgb(51, 49, 49);
+    text-align: center;
+    border-radius: 20px;
+    margin : 2rem 2rem;
+    padding: 1rem;
+}
+.card i{
+    font-size: 4rem;
+}
+.card h3{
+    margin : 1rem;
+    font-size: 25px;
+}
+.card p{
+    margin-bottom: 2rem;
+}
+.card a{
+    cursor:pointer;
+}
+.card:hover{
+    animation: card-hover 2s ease forwards;
+    box-shadow: 0 0 30px 10px rgb(199, 21, 119);
+}
