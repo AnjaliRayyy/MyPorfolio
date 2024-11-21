@@ -40,3 +40,20 @@
 .about-text a{
     margin-bottom: 2rem;
 }
+@media only screen and (max-width : 700px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .about-img{
+        margin: 2rem;
+    }
+    .about-text{
+        margin-top: -2rem;
+        padding: 1rem;
+    }
+    .profile-img{
+        display: none;
+    }
+}
