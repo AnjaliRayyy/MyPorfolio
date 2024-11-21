@@ -29,6 +29,10 @@ body{
     opacity : 0;
     animation: slideRight 1s ease forwards;
 }
+.logo>span{
+    color:#c92a8a;
+    font-size: 2rem;
+}
 .navbar a{
     display: inline-block;
     font-size:25px;
@@ -43,7 +47,6 @@ body{
 }
 .navbar a:hover{
     color: #c92a8a;
-    border-bottom: 2px solid #c92a8a;
 }
 .home{
     position: relative;
@@ -87,9 +90,11 @@ body{
     animation-delay: .7s;
 }
 .home-content h1{
+    color: white;
     font-size: 56px;
     font-weight: 700;
-    margin: -3px;
+    margin: -10px;
+    margin-left: -20rem;
     opacity : 0;
     animation : slideRight 1s ease forwards;
     animation-delay: 1s;
@@ -147,51 +152,6 @@ body{
     font-weight: 800;
 }
 
-
-/*.about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-    background: url("https://img.freepik.com/free-vector/gradient-dynamic-purple-lines-background_23-2148995757.jpg") no-repeat;
-    background-size: cover;
-}
-.about-img>img{
-    position: absolute;
-    left : 13%;
-    top:130%;
-    width: 25%;
-    box-shadow: 0 0 30px #e9a1df, 0 0 40px rgb(199, 21, 119);
-    border-radius: 50%;
-    z-index : 0;
-     opacity:0;
-    animation: slideTop 1s ease forwards;
-    animation-delay : 1.5s; 
-}
-.about-text h2{
-    font-size : 50px;
-    margin : 10px 0;
-}
-.about-text>h2>span{
-    color: rgb(199, 21, 119);
-}
-.about-text h4{
-   font-size : 29px;
-   font-weight: 600;
-   color:white;
-   line-height: 1.7;
-   margin:10px 0 30px;
-
-}
-.about-text p{
-    color : aliceblue;
-    font-size : 17px;
-    line-height: 1.4;
-    margin-bottom: 2rem;
-}
-*/
-
-
 @keyframes slideRight{
     0%{
         transform : translateX(-100px);
@@ -231,4 +191,11 @@ body{
         transform: translateX(0px);
         opacity:1;
     }
+}
+
+@media only screen and (max-width : 700px){
+    .home-content h1{
+        margin-left : -2rem;
+    }
+    
 }

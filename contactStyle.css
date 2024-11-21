@@ -1,0 +1,150 @@
+#contact-sec{
+    background: url("https://img.freepik.com/free-vector/gradient-dynamic-purple-lines-background_23-2148995757.jpg") no-repeat;
+    background-size: cover;
+}
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactCont-items>h2{
+    text-align: center;
+    font-size : 50px;
+    padding : 10px 0 20px;
+}
+
+.contactCont-items>h2>span{
+    color : rgb(199, 21, 119);
+}
+
+.contactInfo-items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.contactInfo-items p{
+    margin-left: 1rem;
+}
+
+.socialmedia-handles{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.socialmedia-handles a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    background: transparent;
+    border : 2px solid #c92a8a;
+    border-radius: 50%;
+    font-size : 20px;
+    color: #c92a8a;
+    text-decoration: none;
+    margin : 30px 15px 30px 0;
+    /* transition : .5s ease */
+    opacity : 0;
+    animation : slideLeft 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+
+.socialmedia-handles a:hover{
+    color: black;
+    background: #c92a8a;
+    box-shadow: 0 0 30px #c92a8a;
+}
+
+.form-container {
+  background-color: rgb(233 240 255);
+    margin: 2rem;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: #c92a8a;
+    box-shadow: 0 10px 60px rgb(46 44 49);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  button {
+    background: #5b23ff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #38048a;
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 15px 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input, textarea, button {
+      font-size: 0.9rem;
+    }
+  }
+
+  @keyframes slideLeft{
+    0%{
+        transform : translateX(100px);
+        opacity : 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+@media only screen and (max-width : 700px){
+  .form-container{
+    margin-left: 0.3rem;
+  }
+}
